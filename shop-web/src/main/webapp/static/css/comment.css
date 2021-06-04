@@ -1,0 +1,122 @@
+/*商品信息描述*/
+.product-tab {
+    margin-top: 30px;
+}
+.product-tab .nav-tab {
+    width: 100%;
+    overflow: hidden;
+    z-index: 100;
+    position: absolute;
+    top: 500px;
+}
+
+.product-tab .nav-tab>li {
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    display: inline;
+    background: #e2e2e2;
+    border: 1px solid #e2e2e2;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.product-tab .nav-tab>li:last-child {
+    margin-right: 0;
+}
+
+.product-tab .nav-tab>li>a {
+    color: #333333;
+    padding: 0 26px;
+    height: 50px;
+    float: left;
+}
+.product-tab .nav-tab>li:hover>a,
+.product-tab .nav-tab>li.active>a {
+    background: #fff;
+}
+.product-tab .tab-container {
+    padding: 20px;
+    border: 1px solid #e2e2e2;
+    margin-top: -1px;
+    z-index: 1;
+}
+
+.product-tab .tab-container p {
+    margin: 0 0 10px;
+}
+
+.product-tab .tab-container .table {
+    margin-bottom: 0;
+}
+
+.product-tab .tab-container .tab-panel {
+    line-height: 24px;
+}
+
+.product-comments-block-tab {
+    overflow: hidden;
+}
+
+.product-comments-block-tab .fa {
+    line-height: inherit;
+}
+
+.product-comments-block-tab .reviewRating {
+    color: #ff9900;
+}
+
+.product-comments-block-tab .comment {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px dotted #eaeaea;
+}
+
+.product-comments-block-tab .comment:first-child {
+    padding-top: 0;
+}
+
+.product-comments-block-tab .comment:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.product-comments-block-tab .comment .author {
+    border-right: 1px solid #eaeaea;
+}
+
+.product-comments-block-tab .btn-comment {
+    padding: 5px 15px;
+    border: 1px solid #eaeaea;
+    float: left;
+    margin-top: 15px;
+}
+
+.page-product-box {
+    margin-top: 50px;
+}
+
+.page-product-box .heading {
+    font-size: 16px;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 17px;
+}
+
+.page-product-box .owl-next {
+    top: -20px;
+}
+
+.page-product-box .owl-prev {
+    top: -20px;
+    left: inherit;
+    right: 26px;
+}
+
+.page-product-box .product-list li {
+    margin-bottom: 1px;
+}

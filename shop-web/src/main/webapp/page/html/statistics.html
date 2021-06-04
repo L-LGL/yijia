@@ -1,0 +1,140 @@
+<!--
+<div id="main11" style="width: 650px;height:500px;"></div>
+<div id="main21" style="width: 650px;height:500px;"></div>
+<div id="main31" style="width: 600px;height:400px;"></div>
+<script type="text/javascript">
+    // myChart1 商品分类    myChart2 销售量    myChart3 热卖排行榜
+    var myChart1 = echarts.init(document.getElementById('main11'));
+    var myChart2 = echarts.init(document.getElementById('main21'));
+    var myChart3 = echarts.init(document.getElementById('main31'));
+    // 指定图表的配置项和数据
+    var option1 = {
+        title: {
+            text: '商品分类销量表'
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            data: ["服装","饰品","食品","乐器","书籍"]
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10]
+        }]
+    };
+    var option2 = {
+        title: {
+            text: '销售量'
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            data: ["服装","饰品","食品","乐器","书籍"]
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10]
+        }]
+    };
+    var option3 = {
+        title: {
+            text: '热卖榜'
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            data: ["服装","饰品","食品","乐器","书籍"]
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10]
+        }]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart1.setOption(option1);
+    myChart2.setOption(option2);
+    myChart3.setOption(option3);
+</script>-->
+<!-- -->
+<div id="main1" style="width: 650px;height:500px;"></div>
+<!--<div id="main2" style="width: 650px;height:500px;"></div>
+<div id="main3" style="width: 600px;height:400px;"></div>-->
+<script type="text/javascript">
+    // myChart1 商品分类    myChart2 销售量    myChart3 热卖排行榜
+    var myChart1 = echarts.init(document.getElementById('main1'));
+    /* var myChart2 = echarts.init(document.getElementById('main2'));
+     var myChart3 = echarts.init(document.getElementById('main3'));*/
+    // 指定图表的配置项和数据
+    var option1 = {
+        title: {
+            text: '商品分类销量表'
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            data: ["服装","饰品","食品","乐器","书籍"]
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10]
+        }]
+    };
+    /*var option2 = {
+        title: {
+            text: '销售量'
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            data: ["服装","饰品","食品","乐器","书籍"]
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10]
+        }]
+    };
+    var option3 = {
+        title: {
+            text: '热卖榜'
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            data: ["服装","饰品","食品","乐器","书籍"]
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10]
+        }]
+    };*/
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart1.setOption(option1);
+    /*myChart2.setOption(option2);
+    myChart3.setOption(option3);*/
+</script>

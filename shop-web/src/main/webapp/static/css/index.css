@@ -1,0 +1,220 @@
+
+
+.shop-index{
+    position: absolute;
+    width: 820px;
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+    top: 210px;
+    left: 80px;
+    display: flex;
+    justify-content:space-evenly;
+}
+.shop-index-left{
+    position: relative;
+    height: 458px;
+    width: 200px;
+    background-color:rgb(106,11,7);
+    border-radius: 10px;
+    float: left;
+    padding: 0;
+    margin-left: 86px;
+
+}
+.shop-index-left ul{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    margin-top: 25px;
+}
+.shop-index-left ul li{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 60px;
+    padding-left: 10px;
+    line-height: 25px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.shop-index-left ul div{
+    width: 122px;
+    margin-bottom: 2px;
+    float: left;
+}
+.shop-index-left ul div p{
+    width: 126px;
+    font-size: 24px;
+    color: #F0F0F0;
+    padding-left: 30px;
+    margin-left: 20px;
+}
+.shop-index-left ul li:hover{
+    /*background-color: #D86674;*/
+}
+.shop-index-left ul a{
+    color: #F0F0F0;
+    font-size: 24px;
+}
+.shop-index-left ul li a{
+    color: #F0F0F0;
+    font-size: 24px;
+}
+
+
+.shop-index-left ul li a:hover{
+    color: #993333;
+}
+.shop-index-right{
+    position: relative;
+    margin-left: 140px;
+    height: 95%;
+    width: 580px;
+    /*border: 1px solid #F0F0F0;*/
+    border-radius: 10px;
+    float: left;
+}
+#carousel-example-generic{
+    width: 670px;
+    height: 450px;
+}
+
+
+/* goodsDisplay.html 家用电梯模块 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.w {
+    width: 990px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+#box_tit{
+    /*float: left;*/
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 32px;
+}
+.tab_list_item>div {
+    float: left;
+    height: 360px;
+    width: 286px;
+    margin-right: 20px;
+}
+.tab_list_item div a img {
+    background: #2aabd2;
+    width: 286px;
+    height: 290px;
+    border-radius: 4%;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-right: 10px;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_329 {
+    width: 329px;
+    border-left: 1px solid #ccc;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.bb {
+    /* 一般情况下，a如果包含有宽度的盒子，a需要转为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+.box_hd {
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.floor .w {
+    padding-left: 60px;
+    padding-top: 680px;
+}
+
+.box_bd {
+    height: 360px;
+    padding-top: 20px;
+}
+
+.col_210 {
+    width: 210px;
+    /*background-color: #f9f9f9;*/
+    text-align: center;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-bottom: 24px;
+    border-radius: 4%;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-right: 10px;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 220px;
+    border-right: 1px solid #ccc;
+}
+.bb {
+    /* 一般情况下，a如果包含有宽度的盒子，a需要转为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+.space{
+    height: 70px !important;
+    width: 1000px !important;
+}

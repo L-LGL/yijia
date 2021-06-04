@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.zt.dao.StoreDao">
+
+    <insert id="addStore">
+        insert into `store`(s_name,boss,s_grade,s_info,s_license,s_status,s_create,s_update)
+        values (#{name},#{boss},#{grade},#{info},#{license},#{status},#{create},#{update})
+    </insert>
+    <update id="update">
+        update `store` set s_name = #{name},boss=#{boss},s_info=#{info},s_license=#{license},s_update=#{update}
+    </update>
+    <select id="selectById" resultType="java.lang.String">
+        select s_name from store where s_id = #{s_id};
+    </select>
+</mapper>

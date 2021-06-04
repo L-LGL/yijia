@@ -1,0 +1,162 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<title>整合</title>-->
+    <style>
+        /*----------------------------------------------*/
+        .recom {
+            position: absolute;
+            height: 230px;
+            width: 1205px;
+            background-color: lightcoral;
+            top: 1550px;
+            margin-left: 186px;
+        }
+        .recom1 {
+            position: absolute;
+            height: 230px;
+
+            background-color: lightcoral;
+            top: 1830px;
+            margin-left: 186px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .panel {
+            background-color: #f5f5f5;
+            height: 230px;
+            width: 250px;
+            float: left;
+        }
+        .panel img{
+            width: 100%;
+            height: 194px;
+        }
+
+        .recom_hd {
+            float: left;
+            height: 230px;
+            width: 205px;
+            background-color: #5c5251;
+            text-align: center;
+        }
+
+        .recom_hd img {
+            margin-top: 50px;
+        }
+
+        .panel img {
+            /* 和父盒子一样宽，就不会溢出 */
+            width: 250px;
+            height: 192px;
+        }
+
+        .info {
+            font-size: 14px;
+            margin-top: 15px;
+            padding: 0 30px;
+        }
+
+        .info h4 {
+            display: inline-block;
+            /*h4文字不加粗 */
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .info span {
+            color: crimson;
+        }
+
+        .info em {
+            font-style: normal;
+            color: #ebe4e0;
+            margin: 0 6px 0 15px;
+            /* 上右下左 */
+        }
+
+        h4 {
+            display: block;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+
+        p {
+            display: block;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+    </style>
+</head>
+
+
+<%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
+<!-- 连接数据库 -->
+<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
+                   url="jdbc:mysql://localhost:3306/shop?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC"
+                   user="root"  password="root"/>
+<sql:query dataSource="${snapshot}" var="result">
+    SELECT * from goods where priority=1 limit 0,4;
+</sql:query>
+<body>
+<div class="recom">
+    <!-- 今日推荐图标 -->
+    <div class="recom_hd">
+        <img src="/static/img/图标.png" />
+    </div>
+    <!-- 推荐商品的展示区 start -->
+    <c:if test="${!empty result.rows}">
+        <c:forEach var="row" items="${result.rows}">
+            <div class="panel">
+                <a href="#">
+                    <img src="${row.img}" />
+                </a>
+                <!--  <p class="review">快递超牛，很快</p> -->
+                <div class="info">
+                    <h4>
+                        <a href="#"><c:out value="${row.name}"/></a>
+                    </h4>
+                    <em>|</em>
+                    <span>￥<c:out value="${row.price}"/></span>
+                </div>
+            </div>
+        </c:forEach>
+    </c:if>
+    <!-- 推荐商品的展示区 end -->
+</div>
+<div class="recom1">
+    <!-- 评分推荐图标 -->
+    <div class="recom_hd">
+<h1 style="color: aliceblue;margin-top: 100px">评分推荐</h1>
+    </div>
+    <c:forEach var="row" items="${sessionScope.tjiana}">
+        <div class="panel">
+            <a href="#">
+                <img src="${row.img}" />
+            </a>
+            <!--  <p class="review">快递超牛，很快</p> -->
+            <div class="info">
+                <h4>
+                    <a href="#"><c:out value="${row.name}"/></a>
+                </h4>
+                <em>|</em>
+                <span>￥<c:out value="${row.price}"/></span>
+            </div>
+        </div>
+    </c:forEach>
+    <!-- 推荐商品的展示区 end -->
+</div>
+</body>
+
